@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import quotes from "../../data/quotes.json";
 import QuoteBox from "./QuoteBox";
 
-function Quote() {
+function QuoteBoxContainer() {
   const getRandomIndex = () => Math.floor(Math.random() * quotes.length);
 
   const [quoteIndex, setQuoteIndex] = useState(getRandomIndex());
@@ -17,7 +17,13 @@ function Quote() {
 
   const selectedQuote = quotes[quoteIndex];
 
-  return <QuoteBox />;
+  return (
+    <QuoteBox
+      text={selectedQuote.text}
+      author={selectedQuote.author}
+      generateNewQuoteIndex={generateNewQuoteIndex}
+    />
+  );
 }
 
-export default Quote;
+export default QuoteBoxContainer;
