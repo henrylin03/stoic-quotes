@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import styles from "./Quote.module.css";
 
 function Quote() {
   const quotes = [
@@ -35,12 +34,6 @@ function Quote() {
 
   const selectedQuote = quotes[quoteIndex];
 
-  const handleTweet = () => {
-    const tweetText = encodeURIComponent(selectedQuote);
-    const tweetUrl = `https://twitter.com/intent/tweet?text=${tweetText}`;
-    window.open(tweetUrl, "_blank");
-  };
-
   return (
     <>
       <h1 id="text">"{selectedQuote.text}"</h1>
@@ -48,9 +41,7 @@ function Quote() {
       <button id="new-quote" onClick={generateNewQuoteIndex}>
         New Quote
       </button>
-      <button id="tweet-quote" onClick={handleTweet} className={styles.button}>
-        Tweet Quote
-      </button>
+      <button id="tweet-quote">Tweet Quote</button>
     </>
   );
 }
