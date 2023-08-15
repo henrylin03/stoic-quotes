@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import quotes from "../data/quotes.json";
+import quotes from "../../data/quotes.json";
 
 function Quote() {
   const getRandomIndex = () => Math.floor(Math.random() * quotes.length);

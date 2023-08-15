@@ -1,8 +1,8 @@
 import React from "react";
-import Quote from "./Quote";
+import QuoteBoxContainer from "./components/QuoteBoxContainer";
 
 function App() {
-  return <Quote />;
+  return <QuoteBoxContainer />;
 }
 
 export default App;
