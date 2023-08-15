@@ -1,25 +1,7 @@
 import React, { useState } from "react";
+import quotes from "../data/quotes.json";
 
 function Quote() {
-  const quotes = [
-    {
-      text: "We suffer more often in imagination than in reality.",
-      author: "Seneca",
-    },
-    {
-      text: "The best revenge is not to be like your enemy.",
-      author: "Marcus Aurelius",
-    },
-    {
-      text: "You have power over your mind - not outside events. Realize this, and you will find strength.",
-      author: "Marcus Aurelius",
-    },
-    {
-      text: "We have two ears and one mouth so that we can listen twice as much as we speak.",
-      author: "Epictetus",
-    },
-  ];
-
   const getRandomIndex = () => Math.floor(Math.random() * quotes.length);
 
   const [quoteIndex, setQuoteIndex] = useState(getRandomIndex());
