@@ -3,8 +3,10 @@ import React from "react";
 function QuoteBox(props) {
   return (
     <>
-      <h1 id="text">"{props.text}"</h1>
-      <p id="author">- {props.author}</p>
+      <div>
+        <h1>"{props.text}"</h1>
+        <p>- {props.author}</p>
+      </div>
       <button id="new-quote" onClick={props.generateNewQuoteIndex}>
         New Quote
       </button>
