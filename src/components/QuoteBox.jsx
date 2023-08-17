@@ -5,10 +5,7 @@ import styles from "../styles/QuoteBox.module.css";
 
 function QuoteBox(props) {
   return (
-    <Stack
-      gap={4}
-      className="d-flex align-items-center justify-content-center vh-100"
-    >
+    <Stack gap={4} className={styles.stack}>
       <Card className={`p-2 ${styles.card}`}>
         <Card.Body className={styles.cardBody}>
           <Image

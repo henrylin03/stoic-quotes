@@ -1,6 +1,13 @@
 /* QuoteBox.module.css */
+.stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .card {
-  align-items: flex-start;
+  align-items: flex;
   position: relative;
   width: 40vw;
   height: 20vw;
