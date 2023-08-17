@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Stack, Button, Image } from "react-bootstrap";
 import quotationImg from "../assets/quotation.png";
+import styles from "../styles/QuoteBox.module.css";
 
 function QuoteBox(props) {
   return (
@@ -8,30 +9,31 @@ function QuoteBox(props) {
       gap={4}
       className="d-flex align-items-center justify-content-center vh-100"
     >
-      <Card className="p-2">
-        <Card.Body>
+      <Card className={`p-2 ${styles.card}`}>
+        <Card.Body className={styles.cardBody}>
           <Image
             src={quotationImg}
             alt="quotation"
-            style={{ width: "50px", opacity: ".7" }}
+            className={styles.quotationImage}
           />
-          {/* <Card.Title>{props.text}</Card.Title> */}
-          <Card.Text>
-            <h3>{props.text}</h3>
-            <p>- {props.author}</p>
-          </Card.Text>
+          <div className={styles.textContainer}>
+            <Card.Text className={styles.cardText}>
+              <h3>{props.text}</h3>
+              <p className={styles.author}>- {props.author}</p>
+            </Card.Text>
+          </div>
           <Image
             src={quotationImg}
             alt="quotation-rotated"
-            style={{
-              width: "50px",
-              transform: "rotate(180deg)",
-              opacity: ".7",
-            }}
+            className={styles.quotationImageRotated}
           />
         </Card.Body>
       </Card>
-      <Button variant="primary" onClick={props.generateNewQuoteIndex}>
+      <Button
+        variant="primary"
+        onClick={props.generateNewQuoteIndex}
+        className={styles.button}
+      >
         New Quote
       </Button>
     </Stack>
