@@ -1,8 +1,13 @@
 import React from "react";
 import QuoteBoxContainer from "./components/QuoteBoxContainer";
+import styles from "./styles/App.module.css";
 
 function App() {
-  return <QuoteBoxContainer />;
+  return (
+    <div className={styles.background}>
+      <QuoteBoxContainer />
+    </div>
+  );
 }
 
 export default App;
