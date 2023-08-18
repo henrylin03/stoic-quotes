@@ -29,16 +29,15 @@
 
 .cardText {
   text-align: left;
-  font-size: 5vw;
+  font-size: 3vh;
   font-family: "Libre Baskerville", serif;
-  font-weight: bolder;
 }
 
 .author {
   padding-top: 15px;
   text-align: right;
-  font-size: 1rem;
-  font-weight: 200;
+  font-size: 0.8rem;
+  font-weight: 100;
 }
 
 .button {

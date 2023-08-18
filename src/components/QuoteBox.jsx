@@ -15,7 +15,7 @@ function QuoteBox(props) {
           />
           <div className={styles.textContainer}>
             <Card.Text className={styles.cardText}>
-              <h3>{props.text}</h3>
+              <p>{props.text}</p>
               <p className={styles.author}>- {props.author}</p>
             </Card.Text>
           </div>
