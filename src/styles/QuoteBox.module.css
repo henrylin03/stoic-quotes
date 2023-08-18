@@ -29,11 +29,13 @@
 
 .cardText {
   text-align: left;
+  font-size: 5vw;
 }
 
 .author {
   padding-top: 15px;
   text-align: right;
+  font-size: 0.8vw;
 }
 
 .button {
