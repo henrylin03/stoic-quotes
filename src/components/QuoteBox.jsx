@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Stack, Button, Image } from "react-bootstrap";
-import quotationImg from "../assets/quotation.png";
 import styles from "../styles/QuoteBox.module.css";
+import quotationImg from "../assets/quotation.png";
+import githubLogo from "../../public/github-logo.png";
 
 function QuoteBox(props) {
   return (
@@ -33,6 +34,9 @@ function QuoteBox(props) {
       >
         New Quote
       </Button>
+      <a href="https://github.com/henrylin03/" target="_blank">
+        <img src={githubLogo} className={styles.github} />
+      </a>
     </Stack>
   );
 }

@@ -41,7 +41,12 @@
 }
 
 .button {
-  padding: 15px 40px;
+  padding: 15px 55px;
+}
+
+.github {
+  height: 45px;
+  margin-top: 40px;
 }
 
 /* quotation mark */
