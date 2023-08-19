@@ -45,8 +45,9 @@
 }
 
 .github {
-  height: 45px;
-  margin-top: 40px;
+  height: 35px;
+  margin-top: -10px;
+  opacity: 0.8;
 }
 
 /* quotation mark */
