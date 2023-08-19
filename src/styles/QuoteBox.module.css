@@ -1,0 +1,72 @@
+/* QuoteBox.module.css */
+.stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  align-items: flex;
+  position: relative;
+  width: 40vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+}
+
+.cardBody {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer {
+  width: 75%;
+}
+
+.cardText {
+  text-align: left;
+  font-size: 3vh;
+  font-family: "Libre Baskerville", serif;
+}
+
+.author {
+  padding-top: 15px;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.button {
+  padding: 15px 55px;
+}
+
+.github {
+  height: 35px;
+  margin-top: -10px;
+  opacity: 0.8;
+}
+
+/* quotation mark */
+.quotationImage,
+.quotationImageRotated {
+  width: 100px;
+  opacity: 0.5;
+  position: absolute;
+  padding: 15px;
+}
+
+.quotationImage {
+  top: 0;
+  left: 0;
+}
+
+.quotationImageRotated {
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}

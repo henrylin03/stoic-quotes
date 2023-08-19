@@ -1,13 +1,11 @@
 import React from "react";
-import Quote from "./Quote";
-import styles from "./App.module.css";
+import QuoteBoxContainer from "./components/QuoteBoxContainer";
+import styles from "./styles/App.module.css";
 
 function App() {
   return (
-    <div className={styles.quoteBox}>
-      <div id="quote-box">
-        <Quote />
-      </div>
+    <div className={styles.background}>
+      <QuoteBoxContainer />
     </div>
   );
 }
