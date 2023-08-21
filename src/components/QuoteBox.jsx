@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Stack, Button, Image } from "react-bootstrap";
+import { Card, Stack, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotationImg from "../assets/quotation.png";
 import githubLogo from "../assets/github-logo.png";
@@ -15,10 +15,12 @@ function QuoteBox(props) {
             className={styles.quotationImage}
           />
           <div className={styles.textContainer}>
-            <Card.Text className={styles.cardText}>
-              <p>{props.text}</p>
-              <p className={styles.author}>- {props.author}</p>
-            </Card.Text>
+            <Fade in={props.textIsVisible}>
+              <Card.Text className={styles.cardText}>
+                <p>{props.text}</p>
+                <p className={styles.author}>- {props.author}</p>
+              </Card.Text>
+            </Fade>
           </div>
           <Image
             src={quotationImg}
