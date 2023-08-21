@@ -9,7 +9,8 @@
 .card {
   align-items: flex;
   position: relative;
-  height: 20vw;
+  width: 45vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
 }
@@ -43,32 +44,6 @@
   font-weight: 100;
 }
 
-@media (max-width: 1800px) {
-  .card {
-    width: 80%;
-    height: 50%;
-  }
-
-  .textContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80%;
-  }
-}
-
-@media (max-width: 1414px) {
-  .author {
-    font-size: 1.3vw;
-  }
-}
-
-@media (max-width: 990px) {
-  .author {
-    font-size: 2vw;
-  }
-}
-
 .button {
   padding: 15px 55px;
   font-size: 100%;
@@ -83,9 +58,9 @@
 /* quotation mark */
 .quotationImage,
 .quotationImageRotated {
-  width: 11%;
+  width: 13%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.35;
   position: absolute;
   padding: 15px;
 }
@@ -100,4 +75,38 @@
   bottom: 0;
   right: 0;
   position: absolute;
+}
+
+@media (max-width: 1600px) {
+  .author {
+    font-size: 1.3vw;
+  }
+
+  .card {
+    width: 80%;
+    height: 50%;
+  }
+
+  .textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 10%;
+  }
+}
+
+@media (max-width: 990px) {
+  .author {
+    font-size: 1.8vw;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 15%;
+  }
 }
