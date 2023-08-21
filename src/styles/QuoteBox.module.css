@@ -39,7 +39,7 @@
 .author {
   padding-top: 15px;
   text-align: right;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-weight: 100;
 }
 
@@ -59,7 +59,7 @@
 
 @media (max-width: 1414px) {
   .author {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
   }
 }
 
@@ -83,7 +83,7 @@
 /* quotation mark */
 .quotationImage,
 .quotationImageRotated {
-  width: 12%;
+  width: 11%;
   height: auto;
   opacity: 0.5;
   position: absolute;
