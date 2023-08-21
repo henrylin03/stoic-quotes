@@ -29,19 +29,20 @@
 
 .cardText {
   text-align: left;
-  font-size: 3vh;
+  font-size: 1.6vw;
   font-family: "Libre Baskerville", serif;
 }
 
 .author {
   padding-top: 15px;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.8vw;
   font-weight: 100;
 }
 
 .button {
   padding: 15px 55px;
+  font-size: 1vw;
 }
 
 .github {
