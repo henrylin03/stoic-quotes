@@ -1,6 +1,6 @@
 .background {
-  background-image: url(../../public/school-of-athens-bg.jpg);
-  background-size: 110%;
+  background-image: url(../../public/school-of-athens-bg-cropped.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
