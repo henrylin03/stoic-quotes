@@ -54,6 +54,7 @@
 .quotationImage,
 .quotationImageRotated {
   width: 12%;
+  height: auto;
   opacity: 0.5;
   position: absolute;
   padding: 15px;
