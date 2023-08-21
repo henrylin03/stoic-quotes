@@ -29,7 +29,7 @@ function QuoteBox(props) {
       </Card>
       <Button
         variant="primary"
-        onClick={props.generateNewQuoteIndex}
+        onClick={props.handleNewQuoteButtonClick}
         className={styles.button}
       >
         New Quote

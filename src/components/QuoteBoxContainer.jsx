@@ -7,7 +7,7 @@ function QuoteBoxContainer() {
 
   const [quoteIndex, setQuoteIndex] = useState(getRandomIndex());
 
-  const generateNewQuoteIndex = () => {
+  const handleNewQuoteButtonClick = () => {
     let newIndex = getRandomIndex();
     while (newIndex === quoteIndex) {
       newIndex = getRandomIndex();
@@ -21,7 +21,7 @@ function QuoteBoxContainer() {
     <QuoteBox
       text={selectedQuote.text}
       author={selectedQuote.author}
-      generateNewQuoteIndex={generateNewQuoteIndex}
+      handleNewQuoteButtonClick={handleNewQuoteButtonClick}
     />
   );
 }

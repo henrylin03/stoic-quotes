@@ -5,6 +5,10 @@
   background-position: top;
 }
 
+.quoteBox {
+  background-color: transparent;
+}
+
 .footer {
   margin-top: 20px;
 }
