@@ -17,10 +17,13 @@ function QuoteBoxContainer() {
       setQuoteIndex(newIndex);
     };
 
+    // fades text out
     setTextIsVisible(false);
 
     setTimeout(() => {
       updateQuoteIndex();
+
+      // fades text back in
       setTextIsVisible(true);
     }, 550);
   };
