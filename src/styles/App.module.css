@@ -1,8 +1,12 @@
 .background {
   background-image: url(../../public/school-of-athens-bg.jpg);
-  background-size: 110%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: top;
+}
+
+.quoteBox {
+  background-color: transparent;
 }
 
 .footer {

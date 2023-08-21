@@ -9,8 +9,8 @@
 .card {
   align-items: flex;
   position: relative;
-  width: 40vw;
-  height: 20vw;
+  width: 45vw;
+  height: 50vh;
   display: flex;
   justify-content: center;
 }
@@ -25,36 +25,43 @@
 
 .textContainer {
   width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .cardText {
   text-align: left;
-  font-size: 3vh;
+  font-size: 200%;
   font-family: "Libre Baskerville", serif;
 }
 
 .author {
   padding-top: 15px;
   text-align: right;
-  font-size: 0.8rem;
+  font-size: 0.8vw;
   font-weight: 100;
 }
 
 .button {
   padding: 15px 55px;
+  font-size: 100%;
+  z-index: 999;
 }
 
 .github {
   height: 35px;
-  margin-top: -10px;
+  margin-top: 15px;
   opacity: 0.8;
 }
 
 /* quotation mark */
 .quotationImage,
 .quotationImageRotated {
-  width: 100px;
-  opacity: 0.5;
+  width: 13%;
+  height: auto;
+  opacity: 0.35;
   position: absolute;
   padding: 15px;
 }
@@ -69,4 +76,38 @@
   bottom: 0;
   right: 0;
   position: absolute;
+}
+
+@media (max-width: 1600px) {
+  .author {
+    font-size: 1.3vw;
+  }
+
+  .card {
+    width: 80%;
+    height: 50%;
+  }
+
+  .textContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 10%;
+  }
+}
+
+@media (max-width: 990px) {
+  .author {
+    font-size: 1.8vw;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 15%;
+  }
 }

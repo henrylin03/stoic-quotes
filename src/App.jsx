@@ -5,7 +5,7 @@ import styles from "./styles/App.module.css";
 function App() {
   return (
     <div className={styles.background}>
-      <QuoteBoxContainer />
+      <QuoteBoxContainer className={styles.quoteBox} />
     </div>
   );
 }
