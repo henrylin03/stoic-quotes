@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Stack, Button, Image } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotationImg from "../assets/quotation.png";
-import githubLogo from "../../public/github-logo.png";
+import githubLogo from "../assets/github-logo.png";
 
 function QuoteBox(props) {
   return (
