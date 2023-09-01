@@ -1,11 +1,11 @@
-import QuoteBoxContainer from "./components/QuoteBoxContainer";
+import QuoteBox from "./components/QuoteBox";
 import BackgroundImage from "./components/BackgroundImage";
 import styles from "./styles/App.module.css";
 
 function App() {
   return (
     <div className={styles.background}>
-      <QuoteBoxContainer className={styles.quoteBox} />
+      <QuoteBox className={styles.quoteBox} />
     </div>
   );
 }
