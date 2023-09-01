@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Card, Stack, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
-import quotes from "../../data/quotes.json";
 import quotationImg from "../assets/quotation.png";
 import githubLogo from "../assets/github-logo.png";
 
@@ -30,6 +29,7 @@ export default function QuoteBox(props) {
           />
         </Card.Body>
       </Card>
+
       <Button
         variant="primary"
         onClick={props.handleNewQuoteButtonClick}
@@ -37,6 +37,7 @@ export default function QuoteBox(props) {
       >
         New Quote
       </Button>
+
       <a href="https://github.com/henrylin03" target="_blank" rel="noreferrer">
         <img src={githubLogo} className={styles.github} />
       </a>
