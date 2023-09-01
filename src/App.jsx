@@ -2,7 +2,6 @@ import { useState } from "react";
 import QuoteBox from "./components/QuoteBox";
 import BackgroundImage from "./components/BackgroundImage";
 import quotes from "../data/quotes.json";
-import styles from "./styles/App.module.css";
 
 export default function App() {
   const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
@@ -34,7 +33,6 @@ export default function App() {
     <div>
       <BackgroundImage />
       <QuoteBox
-        className={styles.quoteBox}
         textVisible={textVisible}
         selectedQuote={selectedQuote}
         handleNewQuoteButtonClick={handleNewQuoteButtonClick}

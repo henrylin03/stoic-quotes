@@ -1,5 +1,7 @@
 .backgroundImage {
+  position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  z-index: 1;
 }
