@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import quotes from "../../data/quotes.json";
 import QuoteBox from "./QuoteBox";
 

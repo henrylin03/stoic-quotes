@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Stack, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotationImg from "../assets/quotation.png";
