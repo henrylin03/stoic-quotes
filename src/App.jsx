@@ -1,5 +1,5 @@
-import React from "react";
 import QuoteBoxContainer from "./components/QuoteBoxContainer";
+import BackgroundImage from "./components/BackgroundImage";
 import styles from "./styles/App.module.css";
 
 function App() {
