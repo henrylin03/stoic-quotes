@@ -1,36 +1,12 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
 import { Card, Stack, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotes from "../../data/quotes.json";
 import quotationImg from "../assets/quotation.png";
 import githubLogo from "../assets/github-logo.png";
 
-export default function QuoteBox() {
-  const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
-
-  const [quoteIndex, setQuoteIndex] = useState(getRandomQuoteIndex());
-  const [textVisible, setTextVisible] = useState(true);
-
-  const handleNewQuoteButtonClick = () => {
-    const updateQuoteIndex = () => {
-      let newQuoteIndex = getRandomQuoteIndex();
-      while (newQuoteIndex === quoteIndex) {
-        newQuoteIndex = getRandomQuoteIndex();
-      }
-      setQuoteIndex(newQuoteIndex);
-    };
-
-    // fades text (quote and author) out
-    setTextVisible(false);
-    setTimeout(() => {
-      updateQuoteIndex();
-
-      // fades text back in
-      setTextVisible(true);
-    }, 550);
-  };
-
-  const selectedQuote = quotes[quoteIndex];
+export default function QuoteBox(props) {
+  const selectedQuote = quotes[props.quoteIndex];
 
   return (
     <Stack gap={4} className={styles.stack}>
@@ -42,7 +18,7 @@ export default function QuoteBox() {
             className={styles.quotationImage}
           />
           <div className={styles.textContainer}>
-            <Fade in={textVisible}>
+            <Fade in={props.textVisible}>
               <Card.Text className={styles.cardText}>
                 <p>{selectedQuote.text}</p>
                 <p className={styles.author}>- {selectedQuote.author}</p>
@@ -58,12 +34,12 @@ export default function QuoteBox() {
       </Card>
       <Button
         variant="primary"
-        onClick={handleNewQuoteButtonClick}
+        onClick={props.handleNewQuoteButtonClick}
         className={styles.button}
       >
         New Quote
       </Button>
-      <a href="https://github.com/henrylin03/" target="_blank">
+      <a href="https://github.com/henrylin03" target="_blank" rel="noreferrer">
         <img src={githubLogo} className={styles.github} />
       </a>
     </Stack>
