@@ -1,0 +1,8 @@
+.quoteBoxContainer {
+  position: relative;
+}
+
+.githubFooterContainer {
+  position: absolute;
+  bottom: 3rem;
+}
