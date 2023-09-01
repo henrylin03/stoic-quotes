@@ -31,14 +31,14 @@ export default function App() {
   const selectedQuote = quotes[quoteIndex];
 
   return (
-    <div className={styles.background}>
+    <div>
+      <BackgroundImage />
       <QuoteBox
         className={styles.quoteBox}
         textVisible={textVisible}
         selectedQuote={selectedQuote}
         handleNewQuoteButtonClick={handleNewQuoteButtonClick}
       />
-      <BackgroundImage />
     </div>
   );
 }
