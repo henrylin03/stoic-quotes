@@ -52,6 +52,10 @@
   z-index: 999;
 }
 
+.githubLink {
+  z-index: 3;
+}
+
 .github {
   height: 35px;
   margin-top: 15px;

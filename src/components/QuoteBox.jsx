@@ -38,7 +38,12 @@ export default function QuoteBox(props) {
         New Quote
       </Button>
 
-      <a href="https://github.com/henrylin03" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/henrylin03"
+        target="_blank"
+        rel="noreferrer"
+        className={styles.githubLink}
+      >
         <img src={githubLogo} className={styles.github} />
       </a>
     </Stack>
