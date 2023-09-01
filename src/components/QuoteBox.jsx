@@ -6,8 +6,6 @@ import quotationImg from "../assets/quotation.png";
 import githubLogo from "../assets/github-logo.png";
 
 export default function QuoteBox(props) {
-  const selectedQuote = quotes[props.quoteIndex];
-
   return (
     <Stack gap={4} className={styles.stack}>
       <Card className={`p-2 ${styles.card}`}>
@@ -20,8 +18,8 @@ export default function QuoteBox(props) {
           <div className={styles.textContainer}>
             <Fade in={props.textVisible}>
               <Card.Text className={styles.cardText}>
-                <p>{selectedQuote.text}</p>
-                <p className={styles.author}>- {selectedQuote.author}</p>
+                <p>{props.selectedQuote.text}</p>
+                <p className={styles.author}>- {props.selectedQuote.author}</p>
               </Card.Text>
             </Fade>
           </div>

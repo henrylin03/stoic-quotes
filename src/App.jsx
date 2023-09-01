@@ -28,12 +28,14 @@ export default function App() {
     }, 550);
   };
 
+  const selectedQuote = quotes[quoteIndex];
+
   return (
     <div className={styles.background}>
       <QuoteBox
         className={styles.quoteBox}
         textVisible={textVisible}
-        quoteIndex={quoteIndex}
+        selectedQuote={selectedQuote}
         handleNewQuoteButtonClick={handleNewQuoteButtonClick}
       />
     </div>
