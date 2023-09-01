@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
-import { Card, Stack, Button, Image, Fade } from "react-bootstrap";
+import { Card, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotationImg from "../assets/quotation.png";
 import githubLogo from "../assets/github-logo.png";
 
 export default function QuoteBox(props) {
   return (
-    <Stack gap={4} className={styles.stack}>
-      <Card className={`p-2 ${styles.card}`}>
+    <div className={styles.quoteBox}>
+      <Card className={styles.card}>
         <Card.Body className={styles.cardBody}>
           <Image
             src={quotationImg}
@@ -44,10 +44,8 @@ export default function QuoteBox(props) {
         rel="noreferrer"
         className={styles.githubLink}
       >
-        <img src={githubLogo} className={styles.github} />
+        <img src={githubLogo} className={styles.github} alt="Github Logo" />
       </a>
-    </Stack>
+    </div>
   );
 }
-
-// }
