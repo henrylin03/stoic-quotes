@@ -1,18 +1,19 @@
-/* QuoteBox.module.css */
-.stack {
+.quoteBox {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3rem;
   height: 100vh;
 }
 
 .card {
   align-items: flex;
-  position: relative;
-  width: 45vw;
+  width: 50vw;
   height: 50vh;
   display: flex;
   justify-content: center;
+  z-index: 2;
 }
 
 .cardBody {
@@ -47,13 +48,7 @@
 .button {
   padding: 15px 55px;
   font-size: 100%;
-  z-index: 999;
-}
-
-.github {
-  height: 35px;
-  margin-top: 15px;
-  opacity: 0.8;
+  z-index: 3;
 }
 
 /* quotation mark */

@@ -1,13 +1,12 @@
-import React from "react";
-import { Card, Stack, Button, Image, Fade } from "react-bootstrap";
+/* eslint-disable react/prop-types */
+import { Card, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotationImg from "../assets/quotation.png";
-import githubLogo from "../assets/github-logo.png";
 
-function QuoteBox(props) {
+export default function QuoteBox(props) {
   return (
-    <Stack gap={4} className={styles.stack}>
-      <Card className={`p-2 ${styles.card}`}>
+    <div className={styles.quoteBox}>
+      <Card className={styles.card}>
         <Card.Body className={styles.cardBody}>
           <Image
             src={quotationImg}
@@ -15,10 +14,10 @@ function QuoteBox(props) {
             className={styles.quotationImage}
           />
           <div className={styles.textContainer}>
-            <Fade in={props.textIsVisible}>
+            <Fade in={props.textVisible}>
               <Card.Text className={styles.cardText}>
-                <p>{props.text}</p>
-                <p className={styles.author}>- {props.author}</p>
+                <p>{props.selectedQuote.text}</p>
+                <p className={styles.author}>- {props.selectedQuote.author}</p>
               </Card.Text>
             </Fade>
           </div>
@@ -29,6 +28,7 @@ function QuoteBox(props) {
           />
         </Card.Body>
       </Card>
+
       <Button
         variant="primary"
         onClick={props.handleNewQuoteButtonClick}
@@ -36,11 +36,6 @@ function QuoteBox(props) {
       >
         New Quote
       </Button>
-      <a href="https://github.com/henrylin03/" target="_blank">
-        <img src={githubLogo} className={styles.github} />
-      </a>
-    </Stack>
+    </div>
   );
 }
-
-export default QuoteBox;

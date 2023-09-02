@@ -1,0 +1,16 @@
+.footerContainer {
+  position: relative;
+  text-align: center;
+  margin-top: -100px;
+  z-index: 3;
+}
+
+.gitHubLogo {
+  color: black;
+  opacity: 0.8;
+  transition: color 0.3s;
+}
+
+.gitHubLogo:hover {
+  color: #146394;
+}
