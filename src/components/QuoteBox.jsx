@@ -2,7 +2,6 @@
 import { Card, Button, Image, Fade } from "react-bootstrap";
 import styles from "../styles/QuoteBox.module.css";
 import quotationImg from "../assets/quotation.png";
-import githubLogo from "../assets/github-logo.png";
 
 export default function QuoteBox(props) {
   return (
@@ -37,15 +36,6 @@ export default function QuoteBox(props) {
       >
         New Quote
       </Button>
-
-      <a
-        href="https://github.com/henrylin03"
-        target="_blank"
-        rel="noreferrer"
-        className={styles.githubLink}
-      >
-        <img src={githubLogo} className={styles.github} alt="Github Logo" />
-      </a>
     </div>
   );
 }

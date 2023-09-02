@@ -3,7 +3,6 @@ import QuoteBox from "./components/QuoteBox";
 import GitHubFooter from "./components/GitHubFooter";
 import BackgroundImage from "./components/BackgroundImage";
 import quotes from "../data/quotes.json";
-import styles from "./styles/App.module.css";
 
 export default function App() {
   const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);

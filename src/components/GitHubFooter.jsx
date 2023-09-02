@@ -3,9 +3,14 @@ import styles from "../styles/GitHubFooter.module.css";
 
 export default function GitHubFooter() {
   return (
-    <div>
-      <a href="https://github.com/henrylin03/" target="_blank" rel="noreferrer">
-        <Github size={35} />
+    <div className={styles.footerContainer}>
+      <a
+        href="https://github.com/henrylin03/"
+        target="_blank"
+        rel="noreferrer"
+        className={styles.gitHubLogo}
+      >
+        <Github size={40} />
       </a>
     </div>
   );
