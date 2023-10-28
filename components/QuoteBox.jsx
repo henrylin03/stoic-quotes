@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Title, Text, Paper } from "@mantine/core";
+import { Container, Center, Flex, Title, Text, Paper } from "@mantine/core";
 
 export default function QuoteBox() {
   const [quote, setQuote] = useState({});
@@ -17,13 +17,17 @@ export default function QuoteBox() {
   }, []);
 
   return (
-    <Container>
-      <Paper shadow="sm" p="xl" m="xl">
-        <Title order={1} size="h2">
-          {quote.text}
-        </Title>
-        <Text ta="right">- {quote.author}</Text>
+    <Center h="100vh">
+      <Paper shadow="sm" p="xl" m="xl" w="50vw" h="40vh">
+        <Container w="90%">
+          <Title order={1} p="lg">
+            {quote.text}
+          </Title>
+          <Text ta="right" p="lg">
+            - {quote.author}
+          </Text>
+        </Container>
       </Paper>
-    </Container>
+    </Center>
   );
 }
