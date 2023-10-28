@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Text, Paper, Button } from "@mantine/core";
+import { Container, Title, Text, Paper } from "@mantine/core";
 
 export default function QuoteBox() {
   const [quote, setQuote] = useState({});
@@ -9,7 +9,6 @@ export default function QuoteBox() {
     const quotes = await response.json();
     const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
     const randomQuote = quotes[getRandomQuoteIndex()];
-
     setQuote(randomQuote);
   };
 
@@ -20,9 +19,9 @@ export default function QuoteBox() {
   return (
     <Container>
       <Paper shadow="sm" p="xl" m="xl">
-        <Text size="xl" fw={700}>
+        <Title order={1} size="h2">
           {quote.text}
-        </Text>
+        </Title>
         <Text ta="right">- {quote.author}</Text>
       </Paper>
     </Container>
