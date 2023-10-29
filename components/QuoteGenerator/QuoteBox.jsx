@@ -1,4 +1,4 @@
-import { Flex, Center, Title, Text, Image, Card } from "@mantine/core";
+import { Flex, Title, Text, Image, Card } from "@mantine/core";
 import styles from "./QuoteBox.module.css";
 
 export default function QuoteBox({ quote }) {
