@@ -4,6 +4,9 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function GitHubFooter() {
   return (
     <ActionIcon
+      component="a"
+      href="https://github.com/henrylin03/"
+      target="_blank"
       variant="outline"
       color="grey"
       size="xl"
