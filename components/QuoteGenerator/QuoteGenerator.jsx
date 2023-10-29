@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Center, Stack } from "@mantine/core";
+import { Stack } from "@mantine/core";
 import QuoteBox from "./QuoteBox";
 import NewQuoteButton from "./NewQuoteButton";
 
