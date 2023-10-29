@@ -1,10 +1,10 @@
 import { BackgroundImage } from "@mantine/core";
-import QuoteBox from "../components/QuoteBox";
+import QuoteGenerator from "../components/QuoteGenerator";
 
 export default function IndexPage() {
   return (
     <BackgroundImage src="./school-of-athens-bg.jpg">
-      <QuoteBox />
+      <QuoteGenerator />
     </BackgroundImage>
   );
 }
