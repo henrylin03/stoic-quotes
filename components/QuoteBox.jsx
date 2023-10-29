@@ -23,7 +23,7 @@ export default function QuoteBox() {
           <Title order={1} px="xl" mb="xl">
             {quote.text}
           </Title>
-          <Text ta="right" px="xl" mt="xl">
+          <Text ta="right" px="xl" pt="4rem">
             - {quote.author}
           </Text>
         </Flex>
