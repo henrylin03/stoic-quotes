@@ -1,6 +1,6 @@
 import { BackgroundImage, Stack, Center } from "@mantine/core";
 import QuoteGenerator from "../components/QuoteGenerator";
-import GithubFooter from "../components/GithubFooter/GithubFooter";
+import GithubFooter from "../components/GithubFooter";
 
 export default function IndexPage() {
   return (
