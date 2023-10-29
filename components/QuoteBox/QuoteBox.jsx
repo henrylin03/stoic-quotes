@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Flex, Center, Title, Text, Paper } from "@mantine/core";
+import { Flex, Center, Title, Text, Image, Card } from "@mantine/core";
+import styles from "./QuoteBox.module.css";
 
 export default function QuoteBox() {
   const [quote, setQuote] = useState({});
@@ -19,16 +20,26 @@ export default function QuoteBox() {
 
   return (
     <Center h="100vh">
-      <Paper shadow="sm" p="xl" m="xl" w="50vw" h="40vh">
+      <Card shadow="lg" p="8rem" w="50vw" h="45vh">
+        <Image
+          src="/quotation.png"
+          alt="quotation mark"
+          className={styles.quotationImage}
+        />
         <Flex direction="column" justify="center" h="100%">
           <Title order={1} px="xl" mb="xl">
             {quote.text}
           </Title>
-          <Text ta="right" px="xl" pt="4rem">
+          <Text ta="right" px="xl" pt="xl">
             - {quote.author}
           </Text>
         </Flex>
-      </Paper>
+        <Image
+          src="/quotation.png"
+          alt="quotation mark"
+          className={styles.quotationImageRotated}
+        />
+      </Card>
     </Center>
   );
 }
