@@ -15,11 +15,9 @@ export default function QuoteGenerator() {
   const [quote, setQuote] = useState(fetchRandomQuote);
 
   return (
-    <Center h="100vh">
-      <Stack align="center" gap="xl">
-        <QuoteBox quote={quote} />
-        <NewQuoteButton fetchRandomQuote={fetchRandomQuote} />
-      </Stack>
-    </Center>
+    <Stack align="center" gap="xl">
+      <QuoteBox quote={quote} />
+      <NewQuoteButton fetchRandomQuote={fetchRandomQuote} />
+    </Stack>
   );
 }
