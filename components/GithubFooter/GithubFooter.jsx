@@ -4,8 +4,8 @@ import { IconBrandGithub } from "@tabler/icons-react";
 export default function GitHubFooter() {
   return (
     <ActionIcon
-      variant="white"
-      color="gray"
+      variant="outline"
+      color="grey"
       size="xl"
       radius="xl"
       aria-label="Link to GitHub"
