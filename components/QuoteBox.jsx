@@ -5,9 +5,10 @@ export default function QuoteBox() {
   const [quote, setQuote] = useState({});
 
   const fetchRandomQuote = async () => {
+    const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
+
     const response = await fetch("/api/quotes");
     const quotes = await response.json();
-    const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
     const randomQuote = quotes[getRandomQuoteIndex()];
     setQuote(randomQuote);
   };
