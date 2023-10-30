@@ -1,0 +1,22 @@
+/* quotation mark */
+.quotationImage,
+.quotationImageRotated {
+  width: 13%;
+  height: auto;
+  opacity: 0.35;
+  position: absolute;
+  padding: 15px;
+  margin: 1.5rem;
+}
+
+.quotationImage {
+  top: 0;
+  left: 0;
+}
+
+.quotationImageRotated {
+  transform: rotate(180deg);
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}

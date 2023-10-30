@@ -1,16 +1,16 @@
 import { useState } from "react";
-import QuoteBox from "./components/QuoteBox";
-import GitHubFooter from "./components/GitHubFooter";
-import BackgroundImage from "./components/BackgroundImage";
-import quotes from "../data/quotes.json";
+import { Stack } from "@mantine/core";
+import QuoteBox from "./QuoteBox";
+import NewQuoteButton from "./NewQuoteButton";
+import quotes from "../../data/quotes.json";
 
-export default function App() {
+export default function QuoteGenerator() {
   const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
 
   const [quoteIndex, setQuoteIndex] = useState(getRandomQuoteIndex());
   const [textVisible, setTextVisible] = useState(true);
 
-  const handleNewQuoteButtonClick = () => {
+  const handleButtonClick = () => {
     const updateQuoteIndex = () => {
       let newQuoteIndex = getRandomQuoteIndex();
       while (newQuoteIndex === quoteIndex) {
@@ -19,7 +19,6 @@ export default function App() {
       setQuoteIndex(newQuoteIndex);
     };
 
-    // fades text (quote and author) out
     setTextVisible(false);
     setTimeout(() => {
       updateQuoteIndex();
@@ -28,17 +27,14 @@ export default function App() {
     }, 550);
   };
 
-  const selectedQuote = quotes[quoteIndex];
+  const quote = quotes[quoteIndex];
+
+  //TODO: FEATURE #1 - IMPLEMENT FEATURE THAT PREVENTS SAME QUOTE FROM BEING SHOWN IN THE LAST 5
 
   return (
-    <div>
-      <BackgroundImage />
-      <QuoteBox
-        textVisible={textVisible}
-        selectedQuote={selectedQuote}
-        handleNewQuoteButtonClick={handleNewQuoteButtonClick}
-      />
-      <GitHubFooter />
-    </div>
+    <Stack align="center" gap="xl">
+      <QuoteBox quote={quote} textVisible={textVisible} />
+      <NewQuoteButton handleButtonClick={handleButtonClick} />
+    </Stack>
   );
 }
