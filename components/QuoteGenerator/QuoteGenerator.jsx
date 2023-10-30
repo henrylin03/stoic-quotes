@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Stack } from "@mantine/core";
-import QuoteBox from "./QuoteBox";
 import NewQuoteButton from "./NewQuoteButton";
 import quotes from "../../data/quotes.json";
 import dynamic from "next/dynamic";
