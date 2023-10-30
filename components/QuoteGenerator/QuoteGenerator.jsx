@@ -14,6 +14,9 @@ export default function QuoteGenerator() {
 
   const [quote, setQuote] = useState(fetchRandomQuote);
 
+  //TODO: FEATURE #1 - MUST ENSURE THAT NO TWO QUOTES ARE SHOWN BACK-TO-BACK (OR, IDEALLY, EVEN IN THE LAST 5)
+  //TODO: FEATURE #2 - IMPLEMENT FADE EFFECT ON QUOTE AND AUTHOR WHEN QUOTE TRANSITIONS
+
   return (
     <Stack align="center" gap="xl">
       <QuoteBox quote={quote} />

@@ -4,7 +4,7 @@ import styles from "./QuoteBox.module.css";
 export default function QuoteBox({ quote }) {
   return (
     <>
-      <Card shadow="lg" p="8rem" w="50vw" h="45vh">
+      <Card shadow="lg" p="8rem" w="55vw" h="55vh">
         <Image
           src="/quotation.png"
           alt="quotation mark"
