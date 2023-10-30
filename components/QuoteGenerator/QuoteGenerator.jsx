@@ -3,6 +3,9 @@ import { Stack } from "@mantine/core";
 import QuoteBox from "./QuoteBox";
 import NewQuoteButton from "./NewQuoteButton";
 import quotes from "../../data/quotes.json";
+import dynamic from "next/dynamic";
+
+const QuoteBoxNoSSR = dynamic(() => import("./QuoteBox"), { ssr: false });
 
 export default function QuoteGenerator() {
   const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
@@ -33,7 +36,7 @@ export default function QuoteGenerator() {
 
   return (
     <Stack align="center" gap="xl">
-      <QuoteBox quote={quote} textVisible={textVisible} />
+      <QuoteBoxNoSSR quote={quote} textVisible={textVisible} />
       <NewQuoteButton handleButtonClick={handleButtonClick} />
     </Stack>
   );
