@@ -20,3 +20,9 @@
   right: 0;
   position: absolute;
 }
+
+/* text */
+.text {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 500;
+}
