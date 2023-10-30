@@ -19,10 +19,10 @@ export default function QuoteBox({ quote, textVisible }) {
           {(transitionStyles) => (
             <div style={transitionStyles}>
               <Flex direction="column" justify="center" h="150%">
-                <Title order={1} px="xl" mb="xl">
+                <Title order={1} px="xl" mb="xl" className={styles.text}>
                   {quote.text}
                 </Title>
-                <Text ta="right" px="xl" pt="xl">
+                <Text ta="right" px="xl" pt="xl" className={styles.text}>
                   - {quote.author}
                 </Text>
               </Flex>
