@@ -5,11 +5,11 @@ export default function QuoteBox({ quote, textVisible }) {
   return (
     <>
       <Card shadow="lg" p="8rem" w="55vw" h="55vh" radius="xl">
-        <Image
+        {/* <Image
           src="/quotation.png"
           alt="quotation mark"
           className={styles.quotationImage}
-        />
+        /> */}
         <Transition
           mounted={textVisible}
           transition="fade"
@@ -29,11 +29,11 @@ export default function QuoteBox({ quote, textVisible }) {
             </div>
           )}
         </Transition>
-        <Image
+        {/* <Image
           src="/quotation.png"
           alt="quotation mark"
           className={styles.quotationImageRotated}
-        />
+        /> */}
       </Card>
     </>
   );
