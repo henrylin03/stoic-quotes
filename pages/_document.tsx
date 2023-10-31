@@ -16,6 +16,7 @@ function Document() {
           href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
