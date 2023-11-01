@@ -4,7 +4,18 @@ import styles from "./QuoteBox.module.css";
 export default function QuoteBox({ quote, textVisible }) {
   return (
     <>
-      <Card shadow="lg" p="8rem" w="55vw" h="55vh" radius="xl">
+      <Card
+        shadow="lg"
+        w="55vw"
+        h="55vh"
+        radius="xl"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Image
           src="/quotation.png"
           alt="quotation mark"
@@ -17,12 +28,27 @@ export default function QuoteBox({ quote, textVisible }) {
           timingFunction="ease"
         >
           {(transitionStyles) => (
-            <div style={transitionStyles}>
+            <div
+              style={{
+                width: "75%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "100vh",
+                ...transitionStyles,
+              }}
+            >
               <Flex direction="column" justify="center" h="150%">
-                <Title order={1} px="xl" mb="xl" className={styles.text}>
+                <Title order={1} px="xl" mb="sm" className={styles.text}>
                   {quote.text}
                 </Title>
-                <Text ta="right" px="xl" pt="xl" className={styles.text}>
+                <Text
+                  ta="right"
+                  px="xl"
+                  pt="sm"
+                  className={styles.text}
+                  mt="3rem"
+                >
                   - {quote.author}
                 </Text>
               </Flex>
