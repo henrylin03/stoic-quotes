@@ -1,4 +1,4 @@
-# Stoic Quotes 🏛️
+# The Stoic Quotes 🏛️
 
   <div style="text-align: center;">
     <img src="./public/sculpture.jpg" width="500" alt="Centered Image">
