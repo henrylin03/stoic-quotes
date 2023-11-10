@@ -23,6 +23,7 @@ export default function QuoteGenerator() {
       }
       setQuoteIndex(newQuoteIndex);
       setQuoteIndexHistory([newQuoteIndex, ...quoteIndexHistory.slice(0, 4)]);
+      //NOTE: we must ensure that there are at least 5 quotes in the quotes.json file
     };
 
     //implement fade effect
