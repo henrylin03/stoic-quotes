@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Stack } from "@mantine/core";
+import { useLocalStorage } from "@mantine/hooks";
 import QuoteBox from "./QuoteBox";
 import NewQuoteButton from "./NewQuoteButton";
 import quotes from "../../../data/quotes.json";
@@ -8,25 +9,25 @@ export default function QuoteGenerator() {
   const getRandomQuoteIndex = () => Math.floor(Math.random() * quotes.length);
 
   const [quoteIndex, setQuoteIndex] = useState(getRandomQuoteIndex());
-  const [quoteIndexHistory, setQuoteIndexHistory] = useState([]);
+  const [quoteHistory, setQuoteHistory] = useLocalStorage({
+    key: "quoteHistory",
+    defaultValue: [],
+  });
   const [textVisible, setTextVisible] = useState(true);
-
-  useEffect(() => {
-    setQuoteIndexHistory([quoteIndex]);
-  }, []);
 
   const handleButtonClick = () => {
     const updateQuoteIndex = () => {
       let newQuoteIndex = getRandomQuoteIndex();
-      while (quoteIndexHistory.includes(newQuoteIndex)) {
+      while (quoteHistory.includes(quotes[newQuoteIndex].text)) {
         newQuoteIndex = getRandomQuoteIndex();
       }
       setQuoteIndex(newQuoteIndex);
-      setQuoteIndexHistory([newQuoteIndex, ...quoteIndexHistory.slice(0, 4)]);
-      //NOTE: we must ensure that there are at least 5 quotes in the quotes.json file
+      setQuoteHistory([
+        quotes[newQuoteIndex].text,
+        ...quoteHistory.slice(0, 4),
+      ]);
     };
 
-    //implement fade effect
     setTextVisible(false);
     setTimeout(() => {
       updateQuoteIndex();
