@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Stack } from "@mantine/core";
 import QuoteBox from "./QuoteBox";
 import NewQuoteButton from "./NewQuoteButton";
@@ -11,6 +11,10 @@ export default function QuoteGenerator() {
   const [quoteIndexHistory, setQuoteIndexHistory] = useState([]);
   const [textVisible, setTextVisible] = useState(true);
 
+  useEffect(() => {
+    setQuoteIndexHistory([quoteIndex]);
+  }, []);
+
   const handleButtonClick = () => {
     const updateQuoteIndex = () => {
       let newQuoteIndex = getRandomQuoteIndex();
@@ -21,6 +25,7 @@ export default function QuoteGenerator() {
       setQuoteIndexHistory([newQuoteIndex, ...quoteIndexHistory.slice(0, 4)]);
     };
 
+    //implement fade effect
     setTextVisible(false);
     setTimeout(() => {
       updateQuoteIndex();
