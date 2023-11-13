@@ -65,9 +65,8 @@ export default function QuoteBox({ quote, textVisible }) {
         <Tooltip label="Share">
           <ActionIcon
             variant="light"
+            size="lg"
             color="#c6934b" //darker alternative: #703529
-            size="md"
-            radius="md"
             aria-label="Share to LinkedIn"
           >
             <IconShare style={{ width: "70%", height: "auto" }} />
