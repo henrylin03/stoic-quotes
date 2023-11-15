@@ -12,9 +12,10 @@ import {
 import { IconShare } from "@tabler/icons-react";
 import styles from "./QuoteBox.module.css";
 
-//TODO: add functionality so that when user clicks open the share button, modal pops up to different social media platforms (facebook, x (twitter), linkedin, messenger, wechat, whatsapp)
 //TODO: design what the modal will look like
 //TODO: design what is shared (should add link to bottom to the site itself)
+//TODO: add functionality so that when user clicks open the share button, modal pops up to different social media platforms (facebook, x (twitter), linkedin, messenger, wechat, whatsapp)
+//TODO?: MAY NEED TO IMPLEMENT UNIQUE URLS FOR EACH QUOTE SO THAT THE LINK CAN BE SHARED DIRECTLY!
 
 export default function QuoteBox({ quote, textVisible }) {
   return (
