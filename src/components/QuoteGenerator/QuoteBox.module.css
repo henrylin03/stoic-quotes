@@ -72,3 +72,25 @@
     font-size: 3vw;
   }
 }
+
+@media screen and (max-height: 717px) {
+  .quoteBox {
+    width: 87vw;
+    height: 45vh;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 15%;
+  }
+
+  .quoteText {
+    font-size: 2.5vw;
+    margin-top: 2rem;
+  }
+
+  .authorText {
+    font-size: 1.5vw;
+    margin-bottom: 1rem;
+  }
+}
