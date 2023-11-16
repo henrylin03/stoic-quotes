@@ -31,7 +31,20 @@
 }
 
 /* text */
-.text {
+.quoteText,
+.authorText {
   font-family: "Libre Baskerville", serif;
   font-weight: 500;
+}
+
+/* media queries */
+@media (max-height: 991px) {
+  .quoteBox {
+    width: 55vw;
+    height: 75vh;
+  }
+
+  .quoteText {
+    font-size: 3vw;
+  }
 }

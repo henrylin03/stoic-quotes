@@ -27,14 +27,14 @@ export default function QuoteBox({ quote, textVisible }) {
             }}
           >
             <Flex direction="column" justify="center" h="150%">
-              <Title order={1} px="xl" mb="sm" className={styles.text}>
+              <Title order={1} px="xl" mb="sm" className={styles.quoteText}>
                 {quote.text}
               </Title>
               <Text
                 ta="right"
                 px="xl"
                 pt="sm"
-                className={styles.text}
+                className={styles.authorText}
                 mt="3rem"
               >
                 - {quote.author}
