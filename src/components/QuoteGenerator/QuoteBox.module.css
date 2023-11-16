@@ -1,7 +1,16 @@
+.quoteBox {
+  width: 55vw;
+  height: 55vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3.5rem;
+}
+
 /* quotation mark */
 .quotationImage,
 .quotationImageRotated {
-  width: 13%;
+  width: 15%;
   height: auto;
   opacity: 0.35;
   position: absolute;
@@ -22,7 +31,44 @@
 }
 
 /* text */
-.text {
+.quoteText,
+.authorText {
   font-family: "Libre Baskerville", serif;
   font-weight: 500;
+}
+
+/* media queries */
+@media screen and (max-width: 918px) {
+  .quoteBox {
+    width: 55vw;
+    height: 50vh;
+  }
+
+  .quoteText {
+    font-size: 3.5vw;
+  }
+
+  .authorText {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quoteBox {
+    width: 80vw;
+    height: 45vh;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 25%;
+  }
+
+  .quoteText {
+    font-size: 4vw;
+  }
+
+  .authorText {
+    font-size: 3vw;
+  }
 }
