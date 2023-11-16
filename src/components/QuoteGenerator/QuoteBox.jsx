@@ -3,18 +3,7 @@ import styles from "./QuoteBox.module.css";
 
 export default function QuoteBox({ quote, textVisible }) {
   return (
-    <Card
-      shadow="lg"
-      w="55vw"
-      h="55vh"
-      radius="xl"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <Card shadow="lg" radius="xl" className={styles.quoteBox}>
       <Image
         src="/quotation.png"
         alt="quotation mark"
