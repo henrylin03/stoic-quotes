@@ -10,7 +10,7 @@
 /* quotation mark */
 .quotationImage,
 .quotationImageRotated {
-  width: 13%;
+  width: 15%;
   height: auto;
   opacity: 0.35;
   position: absolute;
@@ -38,13 +38,37 @@
 }
 
 /* media queries */
-@media (max-height: 991px) {
+@media screen and (max-width: 918px) {
   .quoteBox {
     width: 55vw;
-    height: 75vh;
+    height: 50vh;
   }
 
   .quoteText {
+    font-size: 3.5vw;
+  }
+
+  .authorText {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quoteBox {
+    width: 80vw;
+    height: 45vh;
+  }
+
+  .quotationImage,
+  .quotationImageRotated {
+    width: 25%;
+  }
+
+  .quoteText {
+    font-size: 4vw;
+  }
+
+  .authorText {
     font-size: 3vw;
   }
 }
