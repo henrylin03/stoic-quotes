@@ -35,6 +35,7 @@ main {
     background-color: rgba(255, 255, 255, 85%);
     padding: 30px 0;
     position: relative;
+    z-index: -1;
 }
 
 .text {
@@ -71,8 +72,10 @@ main {
 }
 
 .quotation-sign {
-    width: 150px;
+    width: 30%;
     position: absolute;
+    padding: 30px;
+    z-index: -1;
 }
 
 .quotation-sign>svg {
