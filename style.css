@@ -42,28 +42,19 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
-}
-
-.quote-container {
-    flex: 3;
-    display: flex;
-    align-items: center;
-    text-wrap: pretty;
 }
 
 .quote {
     font-size: 2.2rem;
     line-height: 4rem;
-}
-
-.author-container {
-    text-align: right;
-    flex: 1;
+    text-wrap: pretty;
 }
 
 .author {
     font-size: 1.2rem;
+    text-align: right;
 }
 
 button {
