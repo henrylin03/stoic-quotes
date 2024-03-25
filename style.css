@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100dvh;
+    background-image: url("./assets/school-of-athens-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex: 15 1 auto;
+}
+
+.box {
+    border-radius: 15px;
+    max-width: 80%;
+    min-height: 50dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 85%);
+    padding: 15px;
+}
+
+.text {
+    max-width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quote-container {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    text-wrap: pretty;
+}
+
+.quote {
+    font-size: 2.2rem;
+    line-height: 4rem;
+}
+
+.author-container {
+    text-align: right;
+    flex: 1;
+}
+
+.author {
+    font-size: 1.2rem;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: hsl(271, 70%, 50%);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    filter: brightness(115%);
+}
+
+button:active {
+    filter: brightness(90%);
+}
+
+footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 15%);
+    color: white;
+}
