@@ -46,6 +46,12 @@ main {
     gap: 30px;
 }
 
+.quote-container {
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
 .quote {
     font-size: 2.2rem;
     line-height: 4rem;
@@ -55,6 +61,7 @@ main {
 .author {
     font-size: 1.2rem;
     text-align: right;
+    flex: 1;
 }
 
 button {
