@@ -71,10 +71,21 @@ main {
 
 .quotation-sign {
     width: 150px;
+    position: absolute;
 }
 
-.quotation-sign svg {
+.quotation-sign>svg {
     fill: blue;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
 }
 
 button {
