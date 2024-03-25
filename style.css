@@ -27,7 +27,7 @@ main {
 
 .box {
     border-radius: 15px;
-    max-width: 80%;
+    width: min(80%, 800px);
     min-height: 50dvh;
     display: flex;
     flex-direction: column;
