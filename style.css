@@ -54,7 +54,7 @@ main {
 
 .quote {
     font-size: clamp(1rem, 3vw + 1rem, 3rem);
-    line-height: clamp(2rem, 3vw + 2rem, 5rem);
+    line-height: clamp(2rem, 1.6 * (3vw + 1rem), 5rem);
     text-wrap: pretty;
 }
 
