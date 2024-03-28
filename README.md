@@ -1,5 +1,7 @@
 # Stoic Quotes
 
+[![pages-build-deployment](https://github.com/henrylin03/stoic-quotes/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/henrylin03/stoic-quotes/actions/workflows/pages/pages-build-deployment)
+
 **[henrylin.io/stoic-quotes](https://henrylin.io/stoic-quotes/)**
 
 Generator of handpicked quotes from the [Stoics](https://en.wikipedia.org/wiki/Stoicism), written in HTML, CSS and vanilla JavaScript.
