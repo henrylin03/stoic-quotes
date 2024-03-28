@@ -50,7 +50,7 @@ const newQuoteBtn = document.querySelector("button");
 const quoteText = document.querySelector(".quote");
 const authorText = document.querySelector(".author");
 
-const lastFiveQuotes = [];
+const lastFiveQuoteIndexes = [];
 
 function generateNewQuote() {
   const randomIndex = getRandomQuoteIndex();
