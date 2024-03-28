@@ -50,9 +50,9 @@ const newQuoteBtn = document.querySelector("button");
 const quoteText = document.querySelector(".quote");
 const authorText = document.querySelector(".author");
 
-const lastFiveQuoteIndexes = [];
-
 function generateNewQuote() {
+  const lastFiveQuoteIndexes = getLastFiveQuoteIndexes();
+
   let quoteIndex;
   while (true) {
     quoteIndex = getRandomQuoteIndex();
@@ -72,6 +72,11 @@ function generateNewQuote() {
 
 function getRandomQuoteIndex() {
   return Math.floor(Math.random() * QUOTES_DATA.length);
+}
+
+function getLastFiveQuoteIndexes() {
+  const storedData = localStorage.getItem("lastFiveQuoteIndexes");
+  return storedData ? JSON.parse(storedData) : [];
 }
 
 generateNewQuote();
