@@ -58,7 +58,7 @@ function generateNewQuote() {
     quoteIndex = getRandomQuoteIndex();
     if (!lastFiveQuoteIndexes.includes(quoteIndex)) break;
   }
-  lastFiveQuoteIndexes.push(quoteIndex);
+  lastFiveQuoteIndexes.unshift(quoteIndex);
 
   const selectedQuote = QUOTES_DATA[quoteIndex];
   quoteText.textContent = selectedQuote.text;
