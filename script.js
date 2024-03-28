@@ -1,7 +1,3 @@
-const newQuoteBtn = document.querySelector("button");
-const quoteText = document.querySelector(".quote");
-const authorText = document.querySelector(".author");
-
 const QUOTES_DATA = [
   {
     text: "We suffer more often in imagination than in reality.",
@@ -49,6 +45,10 @@ const QUOTES_DATA = [
   },
   { text: "Don't explain your philosophy. Embody it.", author: "Epictetus" },
 ];
+
+const newQuoteBtn = document.querySelector("button");
+const quoteText = document.querySelector(".quote");
+const authorText = document.querySelector(".author");
 
 function generateNewQuote() {
   const randomIndex = Math.floor(Math.random() * QUOTES_DATA.length);
