@@ -59,13 +59,11 @@ function generateNewQuote() {
     if (!lastFiveQuoteIndexes.includes(quoteIndex)) break;
   }
   lastFiveQuoteIndexes.unshift(quoteIndex);
+  lastFiveQuoteIndexes.splice(5);
 
   const selectedQuote = QUOTES_DATA[quoteIndex];
   quoteText.textContent = selectedQuote.text;
   authorText.textContent = `- ${selectedQuote.author}`;
-
-  console.log(quoteIndex);
-  console.log(lastFiveQuoteIndexes);
 }
 
 function getRandomQuoteIndex() {
