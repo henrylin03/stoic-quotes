@@ -60,6 +60,10 @@ function generateNewQuote() {
   }
   lastFiveQuoteIndexes.unshift(quoteIndex);
   lastFiveQuoteIndexes.splice(5);
+  localStorage.setItem(
+    "lastFiveQuoteIndexes",
+    JSON.stringify(lastFiveQuoteIndexes)
+  );
 
   const selectedQuote = QUOTES_DATA[quoteIndex];
   quoteText.textContent = selectedQuote.text;
