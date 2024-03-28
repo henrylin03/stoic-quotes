@@ -53,8 +53,12 @@ const authorText = document.querySelector(".author");
 const lastFiveQuoteIndexes = [];
 
 function generateNewQuote() {
-  const randomIndex = getRandomQuoteIndex();
-  const selectedQuote = QUOTES_DATA[randomIndex];
+  const quoteIndex = getRandomQuoteIndex();
+  while (lastFiveQuoteIndexes.includes(quoteIndex)) {
+    quoteIndex = getRandomQuoteIndex();
+  }
+
+  const selectedQuote = QUOTES_DATA[quoteIndex];
   quoteText.textContent = selectedQuote.text;
   authorText.textContent = `- ${selectedQuote.author}`;
 }
